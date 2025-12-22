@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <h1>Scan this QR Code</h1>
+  <canvas id="qr"></canvas>
+
+  <script>
+    var qr = new QRious({
+      element: document.getElementById('qr'),
+      value: 'https://example.com', // <-- change to your link
+      size: 250
+    });
+  </script>
+</body>
+</html>
