@@ -5,18 +5,11 @@
   <title>QR Code Page</title>
   <style>
     body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    img { width: 250px; height: 250px; }
   </style>
 </head>
 <body>
   <h1>Scan this QR Code</h1>
-  <canvas id="qr"></canvas>
-
-  <script>
-    var qr = new QRious({
-      element: document.getElementById('qr'),
-      value: 'wellsguestqrcode.png', // <-- change to your link
-      size: 250
-    });
-  </script>
+  <img src="https://raw.githubusercontent.com/sqlsie/wellsguest/main/wellsguestqrcode.png" alt="QR Code">
 </body>
 </html>
