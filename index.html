@@ -41,18 +41,26 @@
     p {
       font-size: 1rem;
       color: #555;
-      margin-bottom: 24px;
+      margin-bottom: 18px;
     }
 
     img {
       width: 240px;
       height: 240px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     .hint {
-      font-size: 0.85rem;
-      color: #777;
+      font-size: 0.9rem;
+      color: #444;
+      background: #f1f5f9;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-top: 6px;
+    }
+
+    .hint strong {
+      color: #111;
     }
   </style>
 </head>
@@ -60,7 +68,7 @@
 
   <div class="card">
 
-    <!-- Clean Wi-Fi SVG icon -->
+    <!-- Wi-Fi SVG icon -->
     <svg class="wifi-icon" viewBox="0 0 64 64" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="32" cy="48" r="3" fill="#3b82f6"/>
       <path d="M20 36a17 17 0 0 1 24 0"/>
@@ -68,14 +76,15 @@
       <path d="M8 24a33 33 0 0 1 48 0"/>
     </svg>
 
-    <h1>Wells Guest Wi-Fi</h1>
+    <h1>WellsGuest Wi-Fi</h1>
     <p>Scan the QR code to connect</p>
 
     <img src="wellsguestqrcode.png" alt="Guest Wi-Fi QR Code">
 
     <div class="hint">
-      Open your camera and scan to join automatically
+      <strong>iPhone users:</strong> After scanning, tap <strong>“Join Network”</strong> to connect.
     </div>
+
   </div>
 
 </body>
