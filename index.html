@@ -27,9 +27,9 @@
     }
 
     .wifi-icon {
-      font-size: 48px;
-      margin-bottom: 10px;
-      color: #3b82f6;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 12px;
     }
 
     h1 {
@@ -59,7 +59,14 @@
 <body>
 
   <div class="card">
-    <div class="wifi-icon">📶</div>
+
+    <!-- Clean Wi-Fi SVG icon -->
+    <svg class="wifi-icon" viewBox="0 0 64 64" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="48" r="3" fill="#3b82f6"/>
+      <path d="M20 36a17 17 0 0 1 24 0"/>
+      <path d="M14 30a25 25 0 0 1 36 0"/>
+      <path d="M8 24a33 33 0 0 1 48 0"/>
+    </svg>
 
     <h1>Wells Guest Wi-Fi</h1>
     <p>Scan the QR code to connect</p>
