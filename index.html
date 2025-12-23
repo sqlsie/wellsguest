@@ -2,14 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>QR Code Page</title>
+  <title>Guest Wi-Fi Access</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-    img { width: 250px; height: 250px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #e4e8ee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 360px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    img {
+      width: 240px;
+      height: 240px;
+      margin-bottom: 20px;
+    }
+
+    .hint {
+      font-size: 0.85rem;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-  <h1>Scan to join WellsieGuest Wifi</h1>
-  <img src="wellsguestqrcode.png" alt="QR Code">
+
+  <div class="card">
+    <h1>Wellsie Guest Wi-Fi</h1>
+    <p>Scan the QR code to connect</p>
+
+    <img src="wellsguestqrcode.png" alt="Guest Wi-Fi QR Code">
+
+    <div class="hint">
+      Open your camera and scan to join automatically
+    </div>
+  </div>
+
 </body>
 </html>
